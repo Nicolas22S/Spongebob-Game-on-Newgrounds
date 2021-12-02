@@ -11,6 +11,7 @@ kaboom({
     background: [ 0, 186, 255, ],
 });
 
+//Access Newgrounds app id
 ngInit("53566:LEI9i3cx", "yX+lXpMXIqqzPyo1vnyAMg==", 1);
 
 //Sprites and sounds
@@ -50,8 +51,7 @@ var mapping = [];
 var intensity = 2.5;
 var broke = false;
 /*
-Hello!
-To get the secret award do the activation code and press enter
+UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT and press ENTER while in game to get secret medal 
 */
 const activation = "wwssadad";
 
@@ -243,7 +243,7 @@ action('goku', (goku) => {
     play("shoot");
     //console.log("BULLET");
   }
-  //
+  //Mix up controls (break)
   if (intensity > 4.9){
     if (m % (parseInt(Math.random()*200 + 90)) == 0){
       play("break");
@@ -300,6 +300,7 @@ player.collides('patty', (p) => {
       pos(0,150),
       layer("spongebob"),
     ]);
+    //Beat on intensity 5.0
     if (intensity > 4.9){
       add([
         text("Congratulations " + String(ngUsername()) + "! \nYou beat SpongebobGame on 5.0 intensity!\n \n-Nicolass22 (SpongeDev)",{size: 20, font: "sinko"}),
@@ -335,6 +336,7 @@ player.collides('bullet', () => {
   location.reload();
 });
 
+//Reload page
 keyPress('r', () => {location.reload()});
 
 //Input super idol cheat code
@@ -382,6 +384,8 @@ charInput((ch) => {
 
 });
 go("startUp");
+
+
 
 //Functions for stuff
 function sleep(milliseconds) {
