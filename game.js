@@ -12,7 +12,7 @@ kaboom({
 });
 
 //Access Newgrounds app id
-ngInit("53566:LEI9i3cx", "yX+lXpMXIqqzPyo1vnyAMg==", 1);
+ngInit(APP ID, ENCRYPTION ID, 1);
 
 //Sprites and sounds
 loadSprite("spongebob", "sprites/spongebob.png");
