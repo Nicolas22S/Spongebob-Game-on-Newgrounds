@@ -232,7 +232,7 @@ action('goku', (goku) => {
   if (m % (parseInt(Math.random()*200 + 60)) == 0){
     let bullet = add([
 		pos(goku.pos),
-		move(player.pos.sub(goku.pos).unit(), SPEED*1.7),
+		move(Math.arctan(player.pos/goku.pos).unit(), SPEED*1.7),
 		sprite("bullet"),
 		area(),
     cleanup(),
